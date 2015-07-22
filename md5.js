@@ -1,5 +1,5 @@
 /*
- * JavaScript MD5 1.0.1
+ * JavaScript MD5 1.0.2
  * https://github.com/blueimp/JavaScript-MD5
  *
  * Copyright 2011, Sebastian Tschan
@@ -264,10 +264,8 @@
         return raw_hmac_md5(key, string);
     }
 
-    if (typeof define === 'function' && define.amd) {
-        define(function () {
-            return md5;
-        });
+    if (typeof define === 'function') {
+        module.exports = md5;
     } else {
         $.md5 = md5;
     }
