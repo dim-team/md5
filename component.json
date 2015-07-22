@@ -1,0 +1,6 @@
+{
+   "name": "md5",
+   "version": "1.0.1",
+   "description": "md5 module",
+   "main": "md5.js"
+}
